@@ -1,0 +1,40 @@
+{
+  "name": "fumble",
+  "description": "Simple error objects in node. Created specifically to be used with the fetchr library and based on hapi.js' Boom.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yahoo/fumble.git#master"
+  },
+  "scripts": {
+    "devtest": "mocha tests/unit --recursive --reporter nyan",
+    "test": "istanbul cover --dir artifacts -- _mocha tests/unit --recursive --reporter tap"
+  },
+  "dependencies": {
+    "lodash": "^3.0",
+    "http-status": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.0",
+    "precommit-hook": "^1.0",
+    "webpack": "^1.5"
+  },
+  "keywords": [
+    "yahoo",
+    "fetchr",
+    "error"
+  ],
+  "precommit": [
+    "devtest"
+  ],
+  "author": "Mo Kouli <mkouli@yahoo-inc.com>",
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/yahoo/fumble/blob/master/LICENSE.md"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.editorconfig
+/arrow-target/
+/artifacts/
+/coverage/
+/tests/
+lcov-*
+xunit*
