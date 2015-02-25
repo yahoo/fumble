@@ -6,6 +6,8 @@
 [![devDependency Status](https://david-dm.org/yahoo/fumble/dev-status.svg)](https://david-dm.org/yahoo/fumble#info=devDependencies)
 [![Coverage Status](https://coveralls.io/repos/yahoo/fumble/badge.svg)](https://coveralls.io/r/yahoo/fumble)
 
+[![Join the chat at https://gitter.im/yahoo/fumble](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yahoo/fumble?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Simple error objects in node. Created specifically to be used with the [fetchr](https://github.com/yahoo/fetchr) library and based on [hapi.js](http://hapijs.com/)' [Boom](https://github.com/hapijs/boom).
 
 ![eli manning](http://media2.giphy.com/media/F9AU77Krzw8ta/giphy.gif)
