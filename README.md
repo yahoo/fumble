@@ -1,5 +1,11 @@
 # fumble
 
+[![npm version](https://badge.fury.io/js/fumble.svg)](http://badge.fury.io/js/fumble)
+[![Build Status](https://travis-ci.org/yahoo/fumble.svg?branch=master)](https://travis-ci.org/yahoo/fumble)
+[![Dependency Status](https://david-dm.org/yahoo/fumble.svg)](https://david-dm.org/yahoo/fumble)
+[![devDependency Status](https://david-dm.org/yahoo/fumble/dev-status.svg)](https://david-dm.org/yahoo/fumble#info=devDependencies)
+[![Coverage Status](https://coveralls.io/repos/yahoo/fumble/badge.svg)](https://coveralls.io/r/yahoo/fumble)
+
 Simple error objects in node. Created specifically to be used with the [fetchr](https://github.com/yahoo/fetchr) library and based on [hapi.js](http://hapijs.com/)' [Boom](https://github.com/hapijs/boom).
 
 ![eli manning](http://media2.giphy.com/media/F9AU77Krzw8ta/giphy.gif)
