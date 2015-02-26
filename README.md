@@ -46,7 +46,7 @@ module.exports = require('api').base.service({
 ## API Docs
 
 ### fumble.http
-provides a set of utilities for returning HTTP errors. Each method returns an `HttpError` instance, which itself extends the native `Error` class. Each error has the following two props
+provides a set of utilities for returning HTTP errors. Each method returns an `HttpError` instance, which itself extends the native `Error` class (which means you can access the `stack` prop on your error instance). Each error has the following two props
 * `statusCode` {Number} - the HTTP status code (typically 4xx or 5xx).
 * `message` {String} - the error message
 
