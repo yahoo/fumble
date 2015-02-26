@@ -32,6 +32,7 @@ module.exports = require('api').base.service({
         });
         
         req.error(error);
+        req.debug(error.stack); // nice stack trace
         /**
         * logs:
         * { [HttpError: Bad Request] statusCode: 400, message: 
