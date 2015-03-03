@@ -8,8 +8,10 @@
     "url": "git@github.com:yahoo/fumble.git#master"
   },
   "scripts": {
-    "devtest": "mocha tests/unit --recursive --reporter nyan",
-    "test": "istanbul cover --dir artifacts -- _mocha tests/unit --recursive --reporter tap"
+    "cover": "istanbul cover --dir artifacts -- _mocha tests/unit --recursive --reporter tap",
+    "devtest": "mocha tests/unit --recursive --reporter spec",
+    "lint": "eslint .",
+    "test": "npm run lint && npm run cover"
   },
   "dependencies": {
     "lodash": "^3.0",
@@ -18,6 +20,7 @@
   "devDependencies": {
     "chai": "^1.10",
     "coveralls": "^2.11.1",
+    "eslint": "^0.15.0",
     "istanbul": "^0.3.5",
     "mocha": "^2.0",
     "precommit-hook": "^1.0",
