@@ -7,11 +7,11 @@
 
 var HttpError = require('./../HttpError');
 
-function create(status, message, options) {
+function create (status, message, options) {
     return new HttpError(status, message, options);
 }
 
-function generateMethod(status, defaultMessage) {
+function generateMethod (status, defaultMessage) {
     return function (message, options) {
         return create(status, message || defaultMessage, options || {});
     };

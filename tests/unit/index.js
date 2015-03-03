@@ -2,7 +2,7 @@
 
 'use strict';
 
-var ROOT_DIR = require('path').resolve(__dirname + '/../..');
+var ROOT_DIR = require('path').resolve(__dirname, '../..');
 var webpack = require('webpack');
 
 var expect = require('chai').expect;
