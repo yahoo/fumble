@@ -15,7 +15,7 @@ describe('fumble', function () {
     });
 
     it('should provide an http object', function () {
-        expect(fumble).to.have.property('http').that.is.an('object').and.is.not.empty();
+        expect(fumble).to.have.property('http').that.is.an('object').and.is.not.empty;
         expect(fumble).to.have.deep.property('http.create').that.is.a('function');
     });
 
