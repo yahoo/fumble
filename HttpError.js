@@ -22,12 +22,20 @@ function HttpError (status, message, options) {
     if (options.debug) {
         this.debug = options.debug;
     }
+
+    // Stack Trace
+    if (Error.captureStackTrace) {
+        // if not IE
+        Error.captureStackTrace(this, this.constructor);
+    } else {
+        // in IE
+        this.stack = (new Error()).stack;
+    }
 }
 
 // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Example.3A_Custom_Error_Types
 HttpError.prototype = new Error();
 HttpError.prototype.constructor = HttpError;
-
 HttpError.prototype.name = 'HttpError';
 
 module.exports = HttpError;
