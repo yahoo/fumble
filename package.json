@@ -1,7 +1,7 @@
 {
   "name": "fumble",
   "description": "Simple error objects in node. Created specifically to be used with the fetchr library and based on hapi.js' Boom.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Mo Kouli <mkouli@yahoo-inc.com>",
   "main": "index.js",
   "repository": {
@@ -29,6 +29,7 @@
     "webpack": "^1.5"
   },
   "pre-commit": [
+    "lint",
     "devtest"
   ],
   "keywords": [
@@ -36,7 +37,6 @@
     "fetchr",
     "error"
   ],
-
   "licenses": [
     {
       "type": "BSD",

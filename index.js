@@ -6,5 +6,6 @@
 'use strict';
 
 module.exports = {
-    http: require('./libs/fumble.http')
+    http: require('./libs/fumble.http'),
+    HttpError: require('./HttpError')
 };
