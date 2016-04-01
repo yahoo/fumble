@@ -5,7 +5,7 @@
 var ROOT_DIR = require('path').resolve(__dirname, '../../..');
 
 var expect = require('chai').expect;
-var camelCase = require('lodash/string/camelCase');
+var camelCase = require('lodash/camelCase');
 
 describe('helper', function () {
     var helper;
