@@ -12,7 +12,7 @@ function create (status, message, options) {
 }
 
 function generateMethod (status, defaultMessage) {
-    return function (message, options) {
+    return function createMethod (message, options) {
         return create(status, message || defaultMessage, options || {});
     };
 }
@@ -25,7 +25,7 @@ var config = require('./../config').http;
 var helper = require('./helper');
 var SUPPORTED_METHODS = helper.mapHTTPStatusCodesToMessagesAndMethodNames(config.SUPPORTED_METHODS);
 
-SUPPORTED_METHODS.forEach(function (supported) {
+SUPPORTED_METHODS.forEach(function eachMethod (supported) {
     var method = generateMethod(supported.status, supported.message);
     fumbleHttp[supported.method] = method;
 });
