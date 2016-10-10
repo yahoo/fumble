@@ -6,7 +6,7 @@
 'use strict';
 
 var STATUS_CODES = require('http-status');
-var camelCase = require('lodash/camelCase');
+var camelCase = require('camelcase');
 
 module.exports = {
     httpErrorMessageToMethodName: camelCase,
