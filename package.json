@@ -16,13 +16,13 @@
     "test": "npm run lint && npm run cover"
   },
   "dependencies": {
-    "camelcase": "^3.0.0",
+    "camelcase": "^6.0.0",
     "http-status": "^1.4.2"
   },
   "devDependencies": {
     "chai": "^3.0.0",
     "coveralls": "^3.1.0",
-    "eslint": "^0.17.0",
+    "eslint": "^7.0.0",
     "istanbul": "^0.4.0",
     "mocha": "^2.0",
     "pre-commit": "^1.0",

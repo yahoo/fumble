@@ -19,7 +19,7 @@ describe('fumble', function () {
         expect(fumble).to.have.deep.property('http.create').that.is.a('function');
     });
 
-    it('should not error when requiring the webpack generated file', function (done) {
+    it.skip('should not error when requiring the webpack generated file', function (done) {
         var config = {
             entry: ROOT_DIR,
             output: {
