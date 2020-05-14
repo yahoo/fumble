@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "camelcase": "^3.0.0",
-    "http-status": "^0.2.0"
+    "http-status": "^1.4.2"
   },
   "devDependencies": {
     "chai": "^3.0.0",
