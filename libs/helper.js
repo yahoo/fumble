@@ -5,7 +5,7 @@
 
 'use strict';
 
-var STATUS_CODES = require('http-status');
+var STATUS_CODES = require('./http-status');
 var camelCase = require('camelcase');
 
 module.exports = {
