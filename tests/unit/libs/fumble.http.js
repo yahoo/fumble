@@ -6,7 +6,7 @@ var ROOT_DIR = require('path').resolve(__dirname, '../../..');
 
 var expect = require('chai').expect;
 
-var HTTP_STATUS_CODES = require('http-status');
+var HTTP_STATUS_CODES = require(ROOT_DIR + '/libs/http-status');
 var HttpError = require(ROOT_DIR + '/HttpError');
 var config = require(ROOT_DIR + '/config').http;
 

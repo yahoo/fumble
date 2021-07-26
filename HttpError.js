@@ -5,7 +5,7 @@
 
 'use strict';
 
-var STATUS_CODES = require('http-status');
+var STATUS_CODES = require('./libs/http-status');
 var DEFAULT_STATUS_CODE = 500;
 
 function HttpError (status, message, options) {
