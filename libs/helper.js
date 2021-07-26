@@ -6,7 +6,16 @@
 'use strict';
 
 var STATUS_CODES = require('./http-status');
-var camelCase = require('camelcase');
+var camelCase = function (str) {
+    var parts = str.toLowerCase().split(/[\s-]/)
+
+    var i;
+    for (i = 1; i < parts.length; ++i) {
+        parts[i] = parts[i][0].toUpperCase() + parts[i].substr(1);
+    }
+
+    return parts.join('');
+}
 
 module.exports = {
     httpErrorMessageToMethodName: camelCase,

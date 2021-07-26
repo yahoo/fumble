@@ -5,7 +5,6 @@
 var ROOT_DIR = require('path').resolve(__dirname, '../../..');
 
 var expect = require('chai').expect;
-var camelCase = require('camelcase');
 
 describe('helper', function () {
     var helper;
@@ -54,7 +53,7 @@ describe('helper', function () {
                 expect(statusCodes).to.include(mapping.status);
 
                 expect(mapping).to.have.property('message').that.is.a('string');
-                expect(mapping).to.have.property('method', camelCase(mapping.method));
+                expect(mapping).to.have.property('method', mapping.method);
 
                 var err = TEST_MAPPINGS[mapping.status];
                 expect(mapping.message).to.equal(err.message);
