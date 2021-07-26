@@ -5,7 +5,7 @@
 var ROOT_DIR = require('path').resolve(__dirname, '../..');
 
 var expect = require('chai').expect;
-var STATUS_CODES = require('http-status');
+var STATUS_CODES = require(ROOT_DIR + '/libs/http-status');
 
 describe('HttpError', function () {
     var HttpError;
@@ -14,7 +14,7 @@ describe('HttpError', function () {
         HttpError = require(ROOT_DIR + '/HttpError');
     });
 
-    it('shoudl have a #name', function () {
+    it('should have a #name', function () {
         expect(HttpError).to.have.property('name', 'HttpError');
     });
 
@@ -38,7 +38,7 @@ describe('HttpError', function () {
             expect(error).to.have.property('message', defaultError.message);
         });
 
-        it('should set the proper error messge for the passed in status', function () {
+        it('should set the proper error message for the passed in status', function () {
             var error = new HttpError(400);
             expect(error).to.be.an('object').and.have.property('statusCode', 400);
             expect(error).to.have.property('message', STATUS_CODES[400]);
