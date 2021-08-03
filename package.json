@@ -4,6 +4,7 @@
   "version": "0.1.8",
   "author": "Mo Kouli <mkouli@yahoo-inc.com>",
   "main": "index.js",
+  "typings": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:yahoo/fumble.git#master"
@@ -16,13 +17,13 @@
     "test": "npm run lint && npm run cover"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "coveralls": "^3.1.0",
-    "eslint": "^7.0.0",
-    "istanbul": "^0.4.0",
-    "mocha": "^9.0.0",
-    "pre-commit": "^1.0",
-    "webpack": "^1.5"
+    "chai": "^4.3.4",
+    "coveralls": "^3.1.1",
+    "eslint": "^7.32.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^9.0.3",
+    "pre-commit": "^1.2.2",
+    "webpack": "^5.48.0"
   },
   "pre-commit": [
     "lint",
